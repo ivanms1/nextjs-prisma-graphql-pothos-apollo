@@ -7,7 +7,7 @@ This template repository is a pre-built codebase that leverages the latest techn
 - **[Next.js](https://nextjs.org/):** A popular React framework that allows for server-side rendering and provides easy integration with GraphQL APIs.
 - **[Prisma](https://www.prisma.io/):** An ORM that supports multiple databases, simplifies database management, and provides a type-safe query API for your application.
 - **[GraphQL](https://graphql.org/):** A query language for APIs that enables efficient data fetching, flexible data manipulation, and real-time updates.
-- **[Pothos](https://github.com/maticzav/pothos):** A GraphQL schema generator that reduces the need for manual schema setup, saves time, and enhances your workflow.
+- **[Pothos](https://pothos-graphql.dev):** A GraphQL schema generator that reduces the need for manual schema setup, saves time, and enhances your workflow.
 - **[Apollo Client](https://www.apollographql.com/docs/react/):** A powerful state management library for managing data and queries on the frontend, providing a seamless integration with the GraphQL backend.
 - **[Apollo Server](https://www.apollographql.com/docs/apollo-server/):** An easy-to-use GraphQL server that facilitates querying, mutations, and subscriptions on the backend.
 
