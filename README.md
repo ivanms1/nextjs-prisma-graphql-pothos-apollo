@@ -1,6 +1,6 @@
 # Next.js, Prisma, GraphQL, Pothos, and Apollo Template Repository
 
-The template repository is a pre-built codebase that leverages the latest technologies to kickstart your Next.js project with ease. It incorporates Prisma, GraphQL, Pothos, and Apollo Client and Server to provide you with a robust and scalable full-stack solution for your web application.
+This template repository is a pre-built codebase that leverages the latest technologies to kickstart your Next.js project with ease. It incorporates Prisma, GraphQL, Pothos, and Apollo Client and Server to provide you with a robust and scalable full-stack solution for your web application.
 
 ## Technologies
 
