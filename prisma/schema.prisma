@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator pothos {
+  provider = "prisma-pothos-types"
+}
+
+datasource db {
+  // sqlite is a very limited database, only used for demostration purposes
+  provider = "sqlite"
+  url      = "file:./dev.db"
+  
+}
+
+model User {
+  id       String    @id @default(cuid())
+  avatar   String?
+  name     String
+  email    String
+  articles Article[]
+}
+
+model Article {
+  id          String   @id @default(cuid())
+  title       String
+  preview     String
+  lead        String
+  authorId    String
+  content     String
+  isPublished Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @default(now())
+  author      User     @relation(fields: [authorId], references: [id])
+}

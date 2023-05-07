@@ -1,31 +1,17 @@
-import Head from "next/head";
-
-import Button from "@/components/Button";
-
-import styles from "./Home.module.scss";
-import { useState } from "react";
+import { useSearchArticlesQuery } from "generated";
 
 function Home() {
-  const [count, setCount] = useState(0);
+  const { data } = useSearchArticlesQuery();
 
-  const handleClick = () => {
-    setCount((prev) => prev + 1);
-  };
   return (
-    <div className={styles.Container}>
-      <Head>
-        <title>Next Template</title>
-        <meta name="description" content="Next.js template by Ivan" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <h1>Welcome to My Next.js Template</h1>
-      <a href="https://github.com/ivanms1" target="_blank" rel="noreferrer">
-        ivanms1
-      </a>
-      <p>count: {count}</p>
-      <Button onClick={handleClick} className={styles.Button}>
-        Click Me
-      </Button>
+    <div>
+      <h1>Web</h1>
+      <div>
+        {data?.articles?.results?.map((article) => (
+          <p key={article.id}> {article.title}</p>
+        ))}
+      </div>
+      <button>Beep</button>
     </div>
   );
 }
